@@ -1,3 +1,59 @@
+/* ================= VERTICAL GALLERY ================= */
+.gallery-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  margin: 32px 0;
+}
+.gallery-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+.gallery-row figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.5);
+  border-radius: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 16px 8px 0 8px;
+  margin: 0;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.gallery-row figure:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.15);
+}
+.gallery-row img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s cubic-bezier(.4,2,.3,1);
+  display: block;
+}
+.gallery-row img:hover {
+  transform: scale(1.08);
+  z-index: 1;
+}
+.caption-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(229, 196, 12, 0.92);
+  color: #050505;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
+  padding: 12px 18px;
+  margin-top: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  min-width: 0;
+  width: 90%;
+  text-align: center;
+}
 
 /* ================= HEADER ================= */
 /* Mengatur tampilan header dan judul utama */
